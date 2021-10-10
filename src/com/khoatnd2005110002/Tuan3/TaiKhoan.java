@@ -1,5 +1,4 @@
-package com.khoatnd2005110002.Tuan2;
-
+package com.khoatnd2005110002.Tuan3;
 public class TaiKhoan {
     
     // thuộc tính
@@ -14,3 +13,4 @@ public class TaiKhoan {
         System.out.println("Số dư: "+SoDuTaiKhoan);
     }
 }
+
