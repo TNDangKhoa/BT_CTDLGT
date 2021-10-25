@@ -12,12 +12,12 @@ public class AppleTestDrive {
         scanner.nextLine();
         while(true){
             Apple apple = new Apple();
+            System.out.print("Nhập màu sắc: ");
+            apple.MauSac = scanner.nextLine();
             System.out.print("Nhập mã ID: ");
             apple.Ma = scanner.nextInt();
             System.out.print("Nhập khối lượng: ");
             apple.KhoiLuong = scanner.nextInt();
-            System.out.println("Nhập màu sắc: ");
-            apple.MauSac = scanner.nextLine();
             list.add(apple);
             scanner.nextLine();
             System.out.print("Nhập thêm (y/n)?: ");
@@ -32,6 +32,19 @@ public class AppleTestDrive {
                 a.inThongTin();
             }
         }
+        //Tìm táo theo màu
+        static void search(){
+            scanner.nextLine();
+            System.out.println("Nhập màu của táo: ");
+            String colorName = scanner.next();
+            for (Apple a: list){
+                if((a.MauSac).equals(colorName)){
+                    a.inThongTin();
+                }else{
+                    System.out.println("Không có táo màu này!");
+                }
+            }
+        }
 
     public static void main(String[] args) {
         
@@ -40,20 +53,16 @@ public class AppleTestDrive {
             System.out.println("------------------MENU------------------");
             System.out.println("1. Nhập Mã ID Táo.");
             System.out.println("2. Xuất DS Táo.");
-            System.out.println("3.");
-            System.out.println("4. .");
-            System.out.println("5. .");
-            System.out.println("6. Kết thúc chương trình.");
+            System.out.println("3. Tìm táo theo màu sắc.");
+            System.out.println("4. Kết thúc chương trình.");
             System.out.println("Chọn chức năng: ");
             System.out.println("------------------MENU------------------");
             suLuaChon = scanner.nextInt();
             switch(suLuaChon){
                 case 1:nhap();break;
                 case 2:xuat();break;
-                case 3:;break;
-                case 4:;break;
-                case 5:;break;
+                case 3:search(); break;
                 default: System.out.println("kết thúc chương trình");
-            }}while(suLuaChon >= 1 && suLuaChon <= 5);
+            }}while(suLuaChon >= 1 && suLuaChon <= 3);
 }
 }
