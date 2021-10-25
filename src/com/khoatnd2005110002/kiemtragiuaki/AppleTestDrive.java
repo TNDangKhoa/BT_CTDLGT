@@ -34,17 +34,17 @@ public class AppleTestDrive {
         }
         //Tìm táo theo màu
         static void search(){
-            scanner.nextLine();
-            System.out.println("Nhập màu của táo: ");
-            String colorName = scanner.next();
-            for (Apple a: list){
-                if((a.MauSac).equals(colorName)){
-                    a.inThongTin();
-                }else{
-                    System.out.println("Không có táo màu này!");
+                scanner.nextLine();
+                System.out.println("Nhập màu của táo: ");
+                String colorName = scanner.next();
+                for (Apple a: list){
+                    if((a.MauSac).equals(colorName)){
+                        a.inThongTin();
+                    }else{
+                        System.out.println("Không có táo màu này!");
+                    }
                 }
             }
-        }
 
     public static void main(String[] args) {
         
