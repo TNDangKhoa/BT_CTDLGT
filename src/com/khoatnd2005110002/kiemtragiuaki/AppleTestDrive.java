@@ -51,7 +51,7 @@ public class AppleTestDrive {
     int suLuaChon;
         do{
             System.out.println("------------------MENU------------------");
-            System.out.println("1. Nhập Mã ID Táo.");
+            System.out.println("1. Nhập thông tin Táo.");
             System.out.println("2. Xuất DS Táo.");
             System.out.println("3. Tìm táo theo màu sắc.");
             System.out.println("4. Kết thúc chương trình.");
