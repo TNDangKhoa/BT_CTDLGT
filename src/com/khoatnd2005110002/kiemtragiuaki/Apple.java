@@ -12,9 +12,6 @@ public class Apple {
         KhoiLuong = weigh;
         MauSac = color;
     }
-
-
-    
     void inThongTin(){
         System.out.println("Mã ID: " +Ma);
         System.out.println("Khối Lượng: " +KhoiLuong);
